@@ -6,7 +6,7 @@ function App() {
     <Router>
       <div className="App">
         <h1>Amazon Clone</h1>
-        <h2>e-commerce site</h2>
+        <h2>E-commerce site</h2>
       </div>
     </Router>
   );
