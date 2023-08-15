@@ -20,16 +20,27 @@ function Header() {
 
       <div className="headerNav">
         {/* 1st Link */}
-        <Link to="/login" className="header__nav">
+        <Link to="/login" className="header__link">
           <div className="header__Option">
-            <span>Hello</span>
+            <span>Hello Rio</span>
             <span>Sign in</span>
           </div>
         </Link>
         {/* 2nd Link */}
+        <Link to="/login" className="header__link">
+          <div className="header__Option">
+            <span>Returns</span>
+            <span>& Orders</span>
+          </div>
+        </Link>
 
         {/* 3rd Link */}
-
+        <Link to="/login" className="header__link">
+          <div className="header__Option">
+            <span>Your</span>
+            <span>Prime</span>
+          </div>
+        </Link>
         {/* 4th Link */}
       </div>
     </nav>
