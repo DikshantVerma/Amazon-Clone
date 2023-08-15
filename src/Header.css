@@ -5,7 +5,8 @@
 }
 
 .header__Logo {
-    width: 120px;
+    width: 100px;
+    object-fit: contain;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 18px;
@@ -18,7 +19,7 @@
 
 .header__searchInput {
     height: 12px;
-    padding: 5px;
+    padding: 10px;
     border: none;
     width: 100%;
 }

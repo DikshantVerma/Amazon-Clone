@@ -13,9 +13,25 @@ function Header() {
           alt="Amazon Logo"
         />
       </Link>
+      <div className="header__search">
+        <input type="text" className="header__searchInput" />
+        <SearchIcon className="header__searchIcon" />
+      </div>
 
-      <input type="text" className="header__searchInput" />
-      <SearchIcon className="header__searchIcon" />
+      <div className="headerNav">
+        {/* 1st Link */}
+        <Link to="/login" className="header__nav">
+          <div className="header__Option">
+            <span>Hello</span>
+            <span>Sign in</span>
+          </div>
+        </Link>
+        {/* 2nd Link */}
+
+        {/* 3rd Link */}
+
+        {/* 4th Link */}
+      </div>
     </nav>
   );
 }
