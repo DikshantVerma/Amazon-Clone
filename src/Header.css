@@ -12,15 +12,24 @@
     margin-top: 18px;
 }
 
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+}
 .header__search {
     display: flex;
     flex: 1;
 }
 
+.header__link {
+    color: white;
+    text-decoration: none;
+}
 .header__searchInput {
     height: 12px;
     padding: 10px;
     border: none;
+    /* width: 1000px; */
     width: 100%;
 }
 .header__searchIcon {
