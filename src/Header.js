@@ -7,7 +7,7 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 function Header() {
   return (
     <nav className="header">
-      <Link to="./">
+      <Link to="/">
         <img
           className="header__Logo"
           src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ecal_logo_print.png"
