@@ -16,6 +16,19 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+.header__option {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__optionlineOne{
+    font-size: 10px;
+}
+
+.header__optionlineTwo {
+    font-size: 13px;
+}
 .header__search {
     display: flex;
     flex: 1;
@@ -29,8 +42,8 @@
     height: 12px;
     padding: 10px;
     border: none;
-    /* width: 1000px; */
-    width: 100%;
+    width: 1000px;
+    /* width: 100%; */
 }
 .header__searchIcon {
     padding: 5px;
