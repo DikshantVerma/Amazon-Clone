@@ -2,6 +2,9 @@ import React from "react";
 import "./Product.css";
 
 function Product({ id, title, image, price, rating }) {
+  if (typeof rating !== "number" || !Number.isInteger(rating) || rating < 1) {
+    return null;
+  }
   return (
     <div className="product">
       <p>{title}</p>
