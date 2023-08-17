@@ -1,6 +1,5 @@
 import React from "react";
-import "./Product.css";
-import { useStateValue } from "./StateProvider";
+import "./CheckoutProduct.css";
 
 function StarRating({ rating }) {
   const renderStars = () => {
@@ -29,37 +28,22 @@ function StarRating({ rating }) {
   return <div className="star-rating">{renderStars()}</div>;
 }
 
-function Product({ id, title, image, price, rating }) {
-  const [{ basket }, dispatch] = useStateValue();
-
-  const addToBasket = () => {
-    dispatch({
-      type: "Add_to_Basket",
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
-    });
-  };
-
+function CheckoutProduct({ id, title, price, rating, image }) {
   return (
-    <div className="product">
-      <div className="product__info">
-        <p>{title}</p>
-        <p className="product__price">
+    <div className="checkoutProduct">
+      <img className="checkoutProduct__image" src={image} alt="" />
+      <div className="checkoutProduct__info">
+        <p className="checkoutProduct__title">{title}</p>
+
+        <p className="checkoutProduct__price">
           <small>Rs.</small>
           <strong>{price}</strong>
         </p>
         <StarRating rating={rating} />
+        <button>Remove from basket</button>
       </div>
-
-      <img src={image} alt="" />
-      <button onClick={addToBasket}>Add to basket</button>
     </div>
   );
 }
 
-export default Product;
+export default CheckoutProduct;

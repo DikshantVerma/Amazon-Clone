@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
+import Checkout from "./Checkout";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function CheckoutPage() {
   return (
     <>
       <Header />
-      <h1>Checkout Page</h1>
+      <Checkout />
     </>
   );
 }
