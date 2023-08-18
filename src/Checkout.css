@@ -1,6 +1,9 @@
 /* Checkout.css */
 .checkout {
     padding: 20px;
+    display: flex;
+    background-color: white;
+    height: max-content;
   }
   
   .flex-container {
